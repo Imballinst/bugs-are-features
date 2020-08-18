@@ -16,7 +16,7 @@ it('findIndexOfRepeatingCharacter', () => {
   expect(findIndexOfRepeatingCharacter(text3, 'o', 3)).toBe(10);
 
   // Not found case.
-  expect(findIndexOfRepeatingCharacter(text1, 'l')).toBe(-1);
+  expect(findIndexOfRepeatingCharacter(text1, 'l', 3)).toBe(-1);
   expect(findIndexOfRepeatingCharacter(text1, 'z')).toBe(-1);
 });
 

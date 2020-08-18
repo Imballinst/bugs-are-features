@@ -1,7 +1,7 @@
 // Copyright (c) Tetrate, Inc 2020 All Rights Reserved.
 
 /**
- * Find the index of the first repeating character. If nothing is found, return -1.
+ * Find the index of the first repeating character. It's NOT case sensitive. If nothing is found, return -1.
  * @param wordOrSentence The string passed as word or sentence.
  * @param character The string that we want to check.
  * @param threshold The number of characters needed for the function to return immediately. Defaults to 2.

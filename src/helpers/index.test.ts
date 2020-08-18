@@ -3,23 +3,24 @@ import {
   findIndexOfRepeatingCharacter,
   removeDuplicatesFromArray,
   convertObjectToMap
-} from "./";
+} from './';
 
-it("findIndexOfRepeatingCharacter", () => {
-  const text1 = "Hello";
-  const text2 = "Firefox";
-  const text3 = "Google Chrome";
+it('findIndexOfRepeatingCharacter', () => {
+  const text1 = 'Hello';
+  const text2 = 'Firefox';
+  const text3 = 'Google Chrome';
 
   // Found case.
-  expect(findIndexOfRepeatingCharacter(text1, "l")).toBe(3);
-  expect(findIndexOfRepeatingCharacter(text2, "f")).toBe(4);
-  expect(findIndexOfRepeatingCharacter(text3, "o", 3)).toBe(10);
+  expect(findIndexOfRepeatingCharacter(text1, 'l')).toBe(3);
+  expect(findIndexOfRepeatingCharacter(text2, 'f')).toBe(4);
+  expect(findIndexOfRepeatingCharacter(text3, 'o', 3)).toBe(10);
 
   // Not found case.
-  expect(findIndexOfRepeatingCharacter(text1, "z")).toBe(-1);
+  expect(findIndexOfRepeatingCharacter(text1, 'l')).toBe(-1);
+  expect(findIndexOfRepeatingCharacter(text1, 'z')).toBe(-1);
 });
 
-it("removeDuplicatesFromArray", () => {
+it('removeDuplicatesFromArray', () => {
   const duplicated = [1, 3, 2, 1, 4, 5, 1, 2, 3, 4, 4, 4, 1, 10, 15, 2, 4, 5];
 
   // The result does not have to be exactly in the same order.
@@ -28,13 +29,13 @@ it("removeDuplicatesFromArray", () => {
   expect(removeDuplicatesFromArray(duplicated)).toEqual(expectedResult);
 });
 
-it("convertObjectToMap", () => {
+it('convertObjectToMap', () => {
   const object = {
-    foo: "bar",
-    bar: "baz"
+    foo: 'bar',
+    bar: 'baz'
   };
   const map = convertObjectToMap(object);
 
-  expect(map.get("foo")).toEqual("bar");
-  expect(map.get("bar")).toEqual("baz");
+  expect(map.get('foo')).toEqual('bar');
+  expect(map.get('bar')).toEqual('baz');
 });

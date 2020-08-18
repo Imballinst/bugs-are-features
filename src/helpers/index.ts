@@ -11,7 +11,7 @@ export function findIndexOfRepeatingCharacter(
   character: string,
   threshold: number = 2
 ): number {
-  throw new Error("Not implemented yet.");
+  throw new Error('Not implemented yet.');
 }
 
 /**
@@ -19,7 +19,7 @@ export function findIndexOfRepeatingCharacter(
  * @param array Array of numbers.
  */
 export function removeDuplicatesFromArray(array: number[]): number[] {
-  throw new Error("Not implemented yet.");
+  throw new Error('Not implemented yet.');
 }
 
 /**
@@ -29,5 +29,5 @@ export function removeDuplicatesFromArray(array: number[]): number[] {
 export function convertObjectToMap(object: {
   [index: string]: string;
 }): Map<string, string> {
-  throw new Error("Not implemented yet.");
+  throw new Error('Not implemented yet.');
 }
